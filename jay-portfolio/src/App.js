@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
+import React from 'react';
+import About from './components/About';
+import Intro from './components/Intro';
+import Projects from './components/Projects';
+import Navbar from './components/Navbar';
 
-function App() {
-  return (
-    <main className="text-gray-400 bg-gray-900 body-font">
-      <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      <Testimonials />
-      <Contact />
-    </main>
-  );
+import projects from './content/projects';
+import statements from './content/about-me';
+
+export default class App extends React.PureComponent {
+  render() {
+    return (
+      <div className="App">
+        < Navbar />
+        < Intro />
+        <About statements={statements}/>
+        <h2 id="projects" class="section-title" data-reactid="49">Projects</h2>
+        <Projects projects={projects} />
+      </div>
+    );
+  }
 }
-
-export default App;

@@ -1,38 +1,38 @@
-.App {
+@import './components/_About';
+
+body {
+  background-color: #f6f9fc;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'pnum';
+  font-variant-numeric: proportional-nums;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.1s ease-in-out;
+}
+
+.section-title {
+  color: rgb(110, 103, 103);
+  font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
   text-align: center;
-}
+  padding-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 80px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  @include mobile {
+    margin-bottom: 40px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-title:after {
+  content: ' ';
+  border: 4px solid rgba(72, 116, 197, 0.65);
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 50px;
 }
