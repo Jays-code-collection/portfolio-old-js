@@ -12,7 +12,7 @@ export default [
       input: 'Jay.cv',
       return:
       // '"<a rel="noopener" href="/jaysharma.pdf" download target="_blank">jaysharma.pdf</a>"',
-        '"<a rel="noopener" href="https://jays-code-collection.github.io/portfolio/public/jaysharma.pdf" target="_blank">jaysharma.pdf</a>"',
+        '"<a rel="noopener" href="https://jays-code-collection.github.io/portfolio/jaysharma.pdf" target="_blank">jaysharma.pdf</a>"',
     },
     {
       input: 'Jay.education',
