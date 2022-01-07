@@ -6,12 +6,11 @@ export default [
     {
       input: 'Jay.contactInfo',
       return:
-        '["<a href="mailto:j.sharma0860@gmail.com">j.sharma0860@gmail.com</a>", "<a rel="noopener" href="https://www.linkedin.com/in/jay-sharma-2606a2150/">LinkedIn</a>", "<a rel="noopener" href="https://github.com/Jays-code-collection">github</a>"]',
+        '["<a href="mailto:j.sharma0860@gmail.com">j.sharma0860@gmail.com</a>", "<a rel="noopener" href="https://www.linkedin.com/in/jay-sharma-2606a2150/" target="_blank">LinkedIn</a>", "<a rel="noopener" href="https://github.com/Jays-code-collection" target="_blank">github</a>"]',
     },
     {
       input: 'Jay.cv',
       return:
-      // '"<a rel="noopener" href="/jaysharma.pdf" download target="_blank">jaysharma.pdf</a>"',
         '"<a rel="noopener" href="https://jays-code-collection.github.io/portfolio/jaysharma.pdf" target="_blank">jaysharma.pdf</a>"',
     },
     {
@@ -26,6 +25,6 @@ export default [
     },
     {
         input: 'Jay.interests',
-        return: '["Basketball", "NBA", "Muay Thai" ]',
+        return: '["Programming", "Basketball", "NBA", "Muay Thai", "Reading"]',
       }
   ];
