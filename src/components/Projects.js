@@ -22,7 +22,8 @@ class ProjectSkills extends React.PureComponent {
 
 class ProjectLinks extends React.PureComponent {
   render() {
-    const { github, preview } = this.props.links;
+    // const { github, preview } = this.props.links;
+    const { github } = this.props.links;
     return (
       <div className="project-links">
         {/* <a
@@ -35,8 +36,9 @@ class ProjectLinks extends React.PureComponent {
         </a> */}
         <a
           href={github}
-          rel="noopener"
+          // rel="noopener"
           target="_blank"
+          rel="noreferrer"
           className="project-link secondary"
         >
           <FontAwesomeIcon icon={['fab', 'github']} /> View Source
@@ -52,7 +54,7 @@ class ProjectCard extends React.PureComponent {
 
     return (
       <div className="project-card">
-        <img className="project-image" src={image} />
+        <img className="project-image" src={image} alt = ""/>
         <div className="project-content">
           <h3>{title}</h3>
           <p dangerouslySetInnerHTML={{ __html: description }} />
